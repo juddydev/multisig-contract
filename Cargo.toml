@@ -1,0 +1,17 @@
+[package]
+name = "multisig-contract"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+ink = { version = "3.0.0", default-features = false, features = ["ink-as-dependency"] }
+
+[profile.dev]
+opt-level = "z"
+
+[profile.release]
+opt-level = "z"
+
